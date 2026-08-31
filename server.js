@@ -26,9 +26,9 @@ const {
 // ===============================
 
 const PORT = process.env.PORT || 3000;
-const VAULT_PASSWORD = process.env.VITE_VAULT_PASSWORD || "12345";
-const SESSION_SECRET =
-  process.env.SESSION_SECRET || "dev-secret-change-in-production";
+const VAULT_PASSWORD = process.env.VAULT_PASSWORD;
+
+const SESSION_SECRET = process.env.SESSION_SECRET;
 const STORAGE_LIMIT = parseInt(process.env.STORAGE_LIMIT || "10737418240", 10);
 const MAX_FILE_SIZE = parseInt(process.env.MAX_FILE_SIZE || "524288000", 10);
 
